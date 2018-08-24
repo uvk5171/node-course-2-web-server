@@ -48,6 +48,14 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/contactus', (req, res) => {
+	res.render('contactus.hbs', {
+		pageTitle: 'Contact Us',
+		address: 'Darjeeling Railway Station, Hill Cart Road, Limbugaon, Darjeeling, West Bengal',
+		author: 'vivek.k@intelegain.com',
+	});
+});
+
 app.get('/bad', (req, res) => {
 	res.send({
 		errorMessage: 'Unable to handle request',
